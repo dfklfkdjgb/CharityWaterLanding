@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FFF8E1;
+      padding: 20px 60px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 40px;
+    }
+    header h1 {
+      font-size: 1.2rem;
+      color: #003366;
+      margin-left: 10px;
+      display: inline-block;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+    .est {
+      color: #003366;
+      font-size: 0.9rem;
+    }
+    .main-section {
+      display: flex;
+      min-height: 100vh;
+      flex-wrap: wrap;
+    }
+    .text-section {
+      flex: 1;
+      background: linear-gradient(135deg, #003366, #0055a5);
+      color: white;
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-section h2 {
+      font-size: 3rem;
+      margin: 0 0 20px;
+      line-height: 1.2;
+    }
+    .text-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      max-width: 600px;
+    }
+    .donate-btn {
+      background-color: #FFD54F;
+      color: #003366;
+      padding: 16px 40px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+    .donate-btn:hover {
+      background-color: #FFC107;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .image-section {
+      flex: 1;
+      background-image: url('https://i.imgur.com/b8jzj95.jpeg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .image-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.2);
+    }
+    .about-section {
+      background-color: #f9f9f9;
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .about-section h3 {
+      font-size: 2.2rem;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+    .about-section p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 850px;
+      margin: 0 auto 20px;
+    }
+    .about-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+    .card h4 {
+      font-size: 1.3rem;
+      color: #003366;
+      margin-bottom: 15px;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .text-section, .image-section {
+        flex: 100%;
+        min-height: auto;
+      }
+      .text-section {
+        padding: 50px;
+        text-align: center;
+      }
+      .text-section h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="img/water-can-transparent.png" alt="Charity Water Logo">
+      <h1>Charity:Water</h1>
+    </div>
+    <div class="est">Est. 2006</div>
+  </header>
+
+  <section class="main-section">
+    <div class="text-section">
+      <h2>A Little Goes A Long Way!</h2>
+      <p>Charity:water is committed to bringing clean and safe drinking water to people around the world. Every dollar you give helps fund community-owned water projects in developing countries, and we prove every project you help fund with photos and GPS coordinates.</p>
+      <p>Your support transforms lives—when a community gains access to clean water, it can change everything: improved health, more time for education, and new opportunities for families to thrive.</p>
+      <a href="https://www.paypal.com/donate" target="_blank" class="donate-btn">DONATE</a>
+    </div>
+    <div class="image-section"></div>
+  </section>
+
+  <section class="about-section">
+    <h3>Why Water?</h3>
+    <p>785 million people lack basic access to clean and safe drinking water. Charity:water exists to change that. We partner with local organizations to build sustainable, community-led solutions that last. By giving today, you’re joining a movement that believes clean water is a basic human right.</p>
+    <p>Since 2006, we’ve funded thousands of water projects around the globe, bringing clean water to millions of people. And we’re just getting started.</p>
+
+    <div class="about-cards">
+      <div class="card">
+        <h4>Health</h4>
+        <p>Clean water reduces disease and saves lives, creating healthier communities everywhere.</p>
+      </div>
+      <div class="card">
+        <h4>Education</h4>
+        <p>With access to water, children—especially girls—can spend more time in school and less time walking for water.</p>
+      </div>
+      <div class="card">
+        <h4>Opportunity</h4>
+        <p>Clean water unlocks new potential, allowing families to thrive with better work and economic opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2025 Charity:Water | Together we can end the water crisis.
+  </div>
+</body>
+</html>
+
+
+
